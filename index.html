@@ -13,11 +13,24 @@
       height: 100%;
    	}
 
-    body {
-      background: rgb(0, 169, 157) url(images/sketch-clipped.svg) top right no-repeat;
-      background-size: contain;
+    html {
+      background-color: rgb(40, 160, 235);
       font-family: "Minion Pro", serif;
       color: #fff;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    body {
+      margin: 0 auto;
+      position: relative;
+      max-width: 63em;
+    }
+
+    @media (min-width: 55em) {
+      body { background: url(images/sketch-clipped.svg) top right no-repeat; }
     }
 
     header, footer, .mission {
@@ -32,8 +45,11 @@
     }
 
     .mission {
-      top: 20%;
-      width: 27em;
+      top: 8em;
+    }
+
+    @media (min-width: 30em) {
+      .mission { width: 27em; }
     }
 
     footer {
@@ -54,14 +70,14 @@
     }
 
     p, ul {
-      font-size: 1.1em;
+      font-size: 1.15em;
       margin: 0;
       padding: 0;
+      line-height: 1.4em;
     }
 
     footer p {
       opacity: 0.6;
-      font-style: italic;
     }
   </style>
 </head>
@@ -91,7 +107,7 @@
 
   <footer>
     <p>
-      Rabbles roused by 
+      Rabble roused by 
       <a href="https://twitter.com/CaptainCalliope">@CaptainCalliope</a> and 
       <a href="https://twitter.com/hellojwilde">@hellojwilde</a>.
     </p>
